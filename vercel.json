@@ -1,11 +1,8 @@
 {
-  "builds": [
+  "rewrites": [
     {
-      "src": "package.json",
-      "use": "@vercel/node",
-      "config": {
-        "buildCommand": "npm ci && npm run dev"
-      }
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
